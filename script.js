@@ -27,11 +27,12 @@ $(document).ready(function() {
   });
   $('figure').on('mouseenter', function () {
     $(this).children('img').animate({
-      'height': '+=15px',
-      'width': '+=15px'
+      'height': '+=12px',
+      'width': '+=12px',
     });
-    $(this).children().animate({
-    	'font-size': '+=3px',
+    $(this).children('figcaption').animate({
+    	'font-size': '+=2px',
+      'width': '+=50px',
     });
     $(this).children().css({
       'font-weight': 'bold'
@@ -39,11 +40,12 @@ $(document).ready(function() {
   });
   $('figure').on('mouseleave', function () {
     $(this).children('img').animate({
-      'height': '-=15px',
-      'width': '-=15px'
+      'height': '-=12px',
+      'width': '-=12px'
     });
-    $(this).children().animate({
-    	'font-size': '-=3px',
+    $(this).children('figcaption').animate({
+    	'font-size': '-=2px',
+      'width': '-=50px'
     });
     $(this).children().css({
       'font-weight': 'normal'
